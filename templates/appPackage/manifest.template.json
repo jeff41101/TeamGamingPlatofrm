@@ -1,0 +1,50 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.11/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.11",
+  "version": "1.0.0",
+  "id": "{{state.fx-resource-appstudio.teamsAppId}}",
+  "packageName": "com.microsoft.teams.extension",
+  "developer": {
+    "name": "Teams App, Inc.",
+    "websiteUrl": "{{{state.fx-resource-frontend-hosting.endpoint}}}",
+    "privacyUrl": "{{{state.fx-resource-frontend-hosting.endpoint}}}{{{state.fx-resource-frontend-hosting.indexPath}}}/privacy",
+    "termsOfUseUrl": "{{{state.fx-resource-frontend-hosting.endpoint}}}{{{state.fx-resource-frontend-hosting.indexPath}}}/termsofuse"
+  },
+  "icons": {
+    "color": "resources/color.png",
+    "outline": "resources/outline.png"
+  },
+  "name": {
+    "short": "{{config.manifest.appName.short}}",
+    "full": "{{config.manifest.appName.full}}"
+  },
+  "description": {
+    "short": "{{config.manifest.appName.short}} is a place where MOXA employees get closer than ever",
+    "full": "{{config.manifest.appName.short}} is created by Jeff Chang & Red Hung. These two MOXA employees aimed to manifest the MOXA spirit and build MOXA into a better work place. This is their first creation, there's so much more to come..."
+  },
+  "accentColor": "#FFFFFF",
+  "bots": [],
+  "composeExtensions": [],
+  "configurableTabs": [
+    {
+      "configurationUrl": "{{{state.fx-resource-frontend-hosting.endpoint}}}{{{state.fx-resource-frontend-hosting.indexPath}}}/config",
+      "canUpdateConfiguration": true,
+      "scopes": ["team", "groupchat"]
+    }
+  ],
+  "staticTabs": [
+    {
+      "entityId": "index",
+      "name": "Gaming Room",
+      "contentUrl": "{{{state.fx-resource-frontend-hosting.endpoint}}}{{{state.fx-resource-frontend-hosting.indexPath}}}/tab",
+      "websiteUrl": "{{{state.fx-resource-frontend-hosting.endpoint}}}{{{state.fx-resource-frontend-hosting.indexPath}}}/tab",
+      "scopes": ["personal"]
+    }
+  ],
+  "permissions": ["identity", "messageTeamMembers"],
+  "validDomains": [],
+  "webApplicationInfo": {
+    "id": "{{state.fx-resource-aad-app-for-teams.clientId}}",
+    "resource": "{{{state.fx-resource-aad-app-for-teams.applicationIdUris}}}"
+  }
+}

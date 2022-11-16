@@ -1,0 +1,28 @@
+.feedback.page > img {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+}
+
+.textbox {
+  border-radius: 0.5rem;
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  height: 80px;
+}
+.givebackdiv {
+  height: 100px;
+  width: 100%;
+  background-color: #ffffff;
+  border: 2px black solid;
+  border-radius: 10px;
+  margin: 10px 0 10px 0px;
+}
+.givebackh2 {
+  margin: 20px;
+}

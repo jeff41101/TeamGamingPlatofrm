@@ -1,0 +1,11 @@
+.title {
+  text-align: center;
+}
+
+#mainframe {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: calc(50% - 40%);
+  width: 80%;
+}

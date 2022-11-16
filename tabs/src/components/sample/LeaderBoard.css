@@ -1,0 +1,15 @@
+.leader.page > img {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+}
+
+.LeaderBoard {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
